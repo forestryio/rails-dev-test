@@ -1,24 +1,27 @@
-# README
+# Forestry Developer Assessment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Requires Ruby v2.4.4
 
-Things you may want to cover:
+## API
 
-* Ruby version
+### Run
 
-* System dependencies
+```
+rails s
+```
 
-* Configuration
+### Instructions
 
-* Database creation
+With the provided rails project, implement the /repos API endpoint. The endpoint should aggregate GitHub repository data from the following sources:
 
-* Database initialization
+* https://api.github.com/users/forestryio/repos
+* the provided JSON file (in repos.json)
 
-* How to run the test suite
+The API endpoint should
+* only return repositories where repository.fork is false.
+* return JSON encoded data
+* be filterable by programming language and created date
+* be sortable by stars, watchers, and forks
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+*Please show your work. Do not submit one big commit*
